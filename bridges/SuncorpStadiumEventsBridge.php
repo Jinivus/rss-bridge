@@ -16,7 +16,7 @@ class SuncorpStadiumEventsBridge extends BridgeAbstract {
 		foreach ($dives as $div) {
 			$item = array();
 			$item['title'] = $div->find('h6.event-title', 0)->plaintext;
-			$item['content'] = $div->find('p.mt-2')->plaintext;
+			$item['content'] = $div;
 			$this->items[] = $item;
 		}
 
